@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather-App</title>
+</head>
+<body>
+    <video id="bvideo" src="./assets/video5.mp4" autoplay loop></video>
+    <div class="page">
+        <div class="top"><h1>Weather Forecasting</h1></div>
+        <div class="up">
+            <input type="text" id="search" placeholder="Enter City Name" >
+            <button id="submit"><i class="fa-solid fa-magnifying-glass"></i></button> 
+        </div>
+        <div class="error">
+            <img src="./assets/close.png" alt="invalid">
+            <h1>Invalid City Name</h1>
+        </div>
+        <div class="pagedwn">
+            <img src="./assets/cloudy.png" id="img" alt="weather situation">
+            <div class="mid">
+                <div class="temp">Temperature</div>
+                <div class="cityy">City Name</div>
+            </div>
+            <div class="lwr">
+                <div class="left">
+                    <div class="humidity">
+                        <img id="humidity_img" src="./assets/humidity.png" alt="humidity">
+                        <div class="hum">
+                        <h3 class="humidit"></h3>
+                        <h3>Humidity</h3>
+                        </div>
+                    </div>
+                </div> 
+                <div class="right">
+                    <div class="speed">
+                        <img id="wind_img" src="./assets/storm.png" alt="wind">
+                        <div class="spe">
+                        <h3 class="speedy"></h3>
+                        <h3>Speed</h3>
+                        </div>
+                    </div>
+                </div> 
+    
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://kit.fontawesome.com/2cebe5cec6.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
